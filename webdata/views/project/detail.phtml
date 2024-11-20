@@ -264,15 +264,18 @@ putenv('<?= $this->escape($variable->key) ?>=<?= $this->escape($variable->getVal
 </table>
 <hr>
 <h3 id="access-log">Access Log</h3>
+<p>You can use <code>ssh git@git.middle2.com log <?= $this->project->name ?></code> to see logs in terminal.</p>
 <button class="older-button" data-log="access-log">Older</button>
 <button class="newer-button" data-log="access-log">Newer</button>
 <table class="table log-table" id="access-log" data-url="/project/getlog/<?= $this->project->name ?>"></table>
 <hr>
 <h3 id="error-log">Error Log</h3>
+<p>You can use <code>ssh git@git.middle2.com log <?= $this->project->name ?> error</code> to see logs in terminal.</p>
 <button class="older-button" data-log="error-log">Older</button>
 <button class="newer-button" data-log="error-log">Newer</button>
 <table class="table log-table" id="error-log" data-url="/project/getlog/<?= $this->project->name ?>/error"></table>
 <h3 id="node-log">Node Log</h3>
+<p>You can use <code>ssh git@git.middle2.com log <?= $this->project->name ?> node</code> to see logs in terminal.</p>
 <button class="older-button" data-log="node-log">Older</button>
 <button class="newer-button" data-log="node-log">Newer</button>
 <table class="table log-table" id="node-log" data-url="/project/getlog/<?= $this->project->name ?>/node"></table>
